@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    database: oracle
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@20.2.11.9:1521/orcl
+    username: hiatmp5
+    password: hiatmp
+
+#默认使用配置
+
+
+
+#公共配置与profiles选择无关
+mybatis:
+  typeAliasesPackage: com.hisense.springboot.model
+  mapperLocations: classpath:mybatis/mapping/*.xml
